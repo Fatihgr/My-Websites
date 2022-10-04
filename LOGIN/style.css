@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/loginbg.jpg);
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form-box {
+    width: 300px;
+    height: 480px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.603);
+    box-shadow: 0 0 20px 9px rgba(0, 0, 0, 0.626);
+    border-radius: 35px;
+    margin: 6% auto;
+    overflow: hidden;
+    padding: 10px;
+    padding-right: 70px;
+}
+
+#Login {
+    justify-content: center;
+    align-items: center;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #220d051a;
+    border-radius: 35px;
+}
+
+.toggle-btn {
+    position: relative;
+    padding: 10px 30px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 13px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 110px;
+    border-radius: 35px;
+    transition: 0.5s;
+    background: linear-gradient(to right, #1c1c2e, #087fce);
+}
+
+.button-box button:nth-child(2) {
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons lottie-player {
+    width: 40px;
+    margin: 0px 12px;
+    cursor: pointer;
+}
+
+.input-group {
+    position: absolute;
+    top: 180px;
+    width: 280px;
+    transition: 0.5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    margin: 5px 0;
+    background: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.416);
+    outline: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-btn {
+    display: block;
+    width: 85%;
+    padding: 10px;
+    border: none;
+    background: linear-gradient(to right, #1c1c2e, #087fce);
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    margin: auto;
+    outline: none;
+}
+
+.input-group a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 30px 10px 30px 0px;
+    color: rgb(118, 117, 117);
+    font-size: 14px;
+}
+
+#Login {
+    left: 50px;
+}
+
+#Register {
+    left: 450px
+}

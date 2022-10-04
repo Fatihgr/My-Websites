@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "fontawesome",
+			"path": "../images/fontawesome"
+		},
+		{
+			"name": "web tasarımım",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "web tasarımım",
+		"git.ignoreLimitWarning": true
+	}
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butik Pastam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+        integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css"
+        integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
+        integrity="sha512-HHsOC+h3najWR7OKiGZtfhFIEzg5VRIPde0kB0bG2QRidTQqf+sbfcxCTB16AcFB93xMjnBIKE29/MjdzXE+qw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+    <!-- HEADER BAŞLANGICI -->
+    <header id="header">
+        <div class="header">
+            <div class="container">
+                <div class="header-navbar">
+                    <div class="header-logo">
+                        <h2>Butik Pastam</h2>
+                    </div>
+                    <div class="header-menu">
+                        <ul id="menuitems">
+                            <li><a href="#">Anasayfa</a></li>
+                            <li><a href="#">Hakkımızda</a></li>
+                            <li><a href="#">Keşfet</a></li>
+                            <li><a href="#">İletişim</a></li>
+                        </ul>
+                        <i class="fa-solid fa-bars" id="menu-icon" onclick="menuToggle()"></i>
+                    </div>
+                </div>
+                <div class="header-text">
+                    <h1><span class="first-letter">W</span>elcome</h1>
+                    <h3>Aşkın En Tatlı Hali</h3>
+                    <div class="tus">
+                        <a href="#" class="btncake">Başlayalım</a>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- HEADER SONU -->
+
+    <!-- HAKKIMIZDA BAŞLANGICI -->
+    <section id="about">
+        <div class="container">
+            <div class="about-title">
+                <h2>HAKKIMIZDA</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-img anime-left">
+                    <img src="/images/aboutus.jpg" alt="">
+                </div>
+                <div class="about-text anime-right">
+                    <h4>Hikayemiz</h4>
+                    <div id="asterisk">
+                        <i class="fa-solid fa-asterisk fa-1.5x"></i>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eum, pariatur corrupti
+                        tenetur laborum ratione.<br>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Doloremque, animi!</p>
+    </section>
+    <!-- HAKKIMIZDA SONU -->
+
+    <!-- PORTFOLİO BAŞLANGICI -->
+    <section id="portfolio">
+        <div class="portfolio">
+            <div class="portfolio-item ani1">
+                <img src="/images/cake.jpg" alt="">
+                <div class="overlay">
+                    <i class="fa-solid fa-cake-candles"></i>
+                </div>
+            </div>
+            <div class="portfolio-item ani2">
+                <img src="/images/cookie.jpg" alt="">
+                <div class="overlay">
+                    <i class="fa-solid fa-cookie-bite"></i>
+                </div>
+            </div>
+            <div class="portfolio-item ani3">
+                <img src="/images/cupcakee.jpg" alt="">
+                <div class="overlay">
+                    <i class="fa-solid fa-ice-cream"></i>
+                </div>
+            </div>
+            <div class="portfolio-item ani4">
+                <img src="/images/eclair.jpg" alt="">
+                <div class="overlay">
+                    <i class="fa-solid fa-ice-cream"></i>
+                </div>
+            </div>
+    </section>
+    <!-- PORTFOLİO SONU -->
+
+    <!-- DISCOVER BAŞLANGICI -->
+
+    <section id="about">
+        <div class="container">
+            <div class="about-title">
+                <h2>KEŞFET</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-img anime-left">
+                    <img src="/images/menu.jpg" alt="">
+                </div>
+                <div class="about-text anime-right">
+                    <h4>Hikayemiz</h4>
+                    <div id="asterisk">
+                        <i class="fa-solid fa-asterisk fa-1.5x"></i>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eum, pariatur corrupti
+                        tenetur laborum ratione.<br>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Doloremque, animi!</p>
+    </section>
+
+    <!-- DISCOVER SONU -->
+
+    <!-- İLETİŞİM BAŞLANGICI -->
+
+    <section id="contact">
+        <div class="contact">
+            <div id="konteynır" class="container">
+                <div class="page-title">
+                    <h2>İletişim</h2>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-item anime-top">
+                        <i class="fa-solid fa-phone"></i>
+                        <p id="phone1">0535 086 91 **</p>
+                        <br>
+                        <p id="phone2">0553 938 16 **</p>
+                    </div>
+                    <div class="contact-item anime-bottom">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p id="adres">Kartal</p>
+                    </div>
+                    <div class="contact-item anime-top">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p id="mail">fatihaytuggor@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İLETİŞİM SONU -->
+    <!-- FOOTER BAŞLANGICI -->
+
+    <section>
+        <footer id="footer"></footer>
+        <div class="footer-content">
+            <div class="page-title">
+                <h2>Bize Ulaşın</h2>
+                <br>
+            </div>
+            <div class="footer-copyright">
+                <p>Sosyal medya hesaplarımızdan bizlere ulaşabilirsiniz!</p>
+                <br>
+                <p id="rights">All rights reserved by Fatih Aytuğ Gör</p>
+                <br>
+            </div>
+            <nav class="footer-social">
+                <ul>
+                    <li>
+                        <a href="https://www.google.com/?gws_rd=ssl" target="_blank">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://tr-tr.facebook.com" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.anime-left', {
+            origin: "left",
+            duration: 1000,
+            distance: "25rem",
+            delay: "300"
+        });
+        sr.reveal('.anime-right', {
+            origin: "right",
+            duration: 1000,
+            distance: "25rem",
+            delay: "600"
+        });
+        sr.reveal('.anime-top', {
+            origin: "top",
+            duration: 1000,
+            distance: "25rem",
+            delay: "600"
+        });
+        sr.reveal('.anime-bottom', {
+            origin: "bottom",
+            duration: 1000,
+            distance: "25rem",
+            delay: "600"
+        })
+    </script>
+
+    <script>
+        ScrollReveal().reveal('.ani1', (delay = 250));
+        ScrollReveal().reveal('.ani2', (delay = 500));
+        ScrollReveal().reveal('.ani3', (delay = 750));
+        ScrollReveal().reveal('.ani4', (delay = 1000));
+    </script> -->
+
+    <!-- // FOOTER SONU -->
+
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+
+        function menuToggle() {
+            if (menuitems.style.maxHeight == "0px") {
+                menuitems.style.maxHeight = "200px";
+            } else {
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

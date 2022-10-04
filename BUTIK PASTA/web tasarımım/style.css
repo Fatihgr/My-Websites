@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+
+
+*,
+/* *::before, */
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section,
+span,
+p {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-image: url(/images/bg2.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.header-logo {
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-bottom: 5px solid white;
+    border-radius: 35px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin-left: 27px;
+}
+
+a {
+    font-size: 15px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%);
+    flex-direction: column;
+}
+
+#rights {
+    font-size: 10px;
+}
+
+h1 {
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 120px;
+    font-weight: 100;
+    line-height: 0.4;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.first-letter {
+    font-size: 200px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+}
+
+h3 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.tus {
+    display: flex;
+    background-color: chocolate;
+    color: white;
+    padding: 10px 15px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    align-items: center;
+    transition: color 0.8s;
+}
+
+.tus a {
+    transition: color 0.8s;
+}
+
+.tus:hover::after {
+    display: flex;
+    background-color: chocolate;
+    color: white;
+    padding: 10px 15px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    align-items: center;
+}
+
+.tus:hover a {
+    color: black;
+}
+
+/* HAKKIMIZDA */
+
+.about {
+    margin-bottom: 150ox;
+}
+
+.about-title {
+    margin: 60px 0;
+}
+
+.about-title h2 {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    color: chocolate;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.about-title h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-img {
+    width: 40%;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    width: 40%;
+}
+
+h4 {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    letter-spacing: 0.5rem;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-weight: 100;
+}
+
+#asterisk {
+    color: black;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.about-text p {
+    font-size: 15px;
+    color: black;
+}
+
+/* PORTFOLİO */
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.portfolio-item {
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: chocolate;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.6;
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.portfolio-item:hover .overlay {
+    top: 0;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+/* İLETİŞİM */
+
+.contact {
+    padding: 10px 0;
+}
+
+.contact h2 {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    color: chocolate;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: chocolate;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+
+.contact-item i {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: chocolate;
+}
+
+.contact-item p {
+    font-size: 14px;
+    line-height: 33px;
+    color: black;
+}
+
+.page-title h2 {
+    margin-top: 30px;
+}
+
+/* FOOTER */
+
+.footer h2 {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 55px 0;
+}
+
+.footer h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: chocolate;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer-content {
+    background-color: rgb(131, 64, 16);
+}
+
+.footer-content h2 {
+    color: white;
+}
+
+.footer-copyright {
+    color: white;
+    text-align: center;
+    flex-basis: 55%;
+    line-height: 2;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-social i {
+    color: white;
+    margin-bottom: 50px;
+    font-size: 25px;
+    padding: 0 50px;
+}
+
+.footer-social:first-child {
+    margin-left: 70px;
+}
+
+#menu-icon {
+    font-size: 25px;
+    display: none;
+    margin-left: 20px;
+}
+
+/* MENU */
+
+@media only screen and (max-width:800px) {
+    .header-menu ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: rgba(210, 105, 30, 0.664);
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.8s;
+    }
+
+    .header-menu i {
+        color: white;
+    }
+
+    .header-menu ul li {
+        margin-right: 50px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .header-menu ul li a {
+        color: white;
+    }
+
+    .header-menu #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* ABOUT */
+
+@media only screen and (max-width:990px) {
+    .about-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+}
+
+/* PORTFOLIO */
+
+@media only screen and (max-width:990px) {
+    .portfolio.portfolio-item {
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (max-width:580px) {
+    .portfolio.portfolio-item {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        margin-top: 30px;
+    }
+
+    .contact-item p {
+        width: 100%;
+        text-align: center;
+    }
+}
