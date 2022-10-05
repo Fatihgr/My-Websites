@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+}
+
+/* HEADER START */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo-circle {
+    flex-direction: column;
+    display: flex;
+    margin-right: 6px;
+}
+
+.header .logo .circle {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.header .logo .logo-circle .circle-1 {
+    background-color: #887a9c;
+    margin-left: 10px;
+}
+
+.header .logo .logo-circle .circle-2 {
+    background-color: #4f93a6;
+}
+
+/* HEADER FINISH */
+
+/* ABOUT START */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 0;
+    overflow: hidden;
+}
+
+.about .about-picture-1 {
+    display: flex;
+    align-items: center;
+}
+
+.about .about-picture-2 {
+    display: flex;
+    align-items: center;
+}
+
+
+.about img {
+    width: 100%;
+    height: 100%;
+    max-width: 110px;
+    max-height: 110px;
+    border-radius: 50%;
+    padding: 5px;
+    transition: .3s;
+}
+
+.about img:hover {
+    transform: scale(1.1);
+}
+
+.about-picture-1 .col-1 {
+    margin-left: 20px;
+}
+
+.about-picture-2 .col-6 {
+    margin-right: -40px;
+}
+
+.about-picture-1 .col-2 {
+    margin-bottom: 90px;
+}
+
+.about-picture-2 .col-5 {
+    margin-bottom: 90px;
+}
+
+.about .about-info h1.p {
+    text-align: center;
+}
+
+.about .about-info h1 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.7px;
+}
+
+.about .about-info p {
+    font-size: 14px;
+    letter-spacing: 0.9px;
+    font-weight: 500;
+    color: rgb(108, 108, 108);
+    margin: 20px 0;
+}
+
+.about .about-info .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .about-info a {
+    text-decoration: none;
+    padding: 13px 35px;
+    display: inline-block;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 35px;
+}
+
+.about .about-info span {
+    background-color: #4f93a6;
+    color: #a0d1df;
+}
+
+.about .about-info .btn-1 {
+    background-color: #4f93a6;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.about .about-info .btn-2 {
+    background-color: #887a9c;
+}
+
+/* ABOUT SONU */
+
+/* ÇİZGİ BAŞLANGICI */
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 60px 0;
+}
+
+.line .limit {
+    border: 1px solid rgb(187, 187, 187);
+    height: 55px;
+}
+
+.line .line-circle {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid rgb(187, 187, 187);
+    color: #777;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 40px;
+    margin-top: 3px;
+}
+
+
+/* ÇİZGİ SONU */
+
+/* CONTENT BAŞLANGICI */
+
+.container {
+    max-width: 1300px;
+    margin: 0 50ox;
+}
+
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .content img {
+    width: 100%;
+    max-width: 225px;
+    margin: 10px 5px;
+    border-radius: 13px;
+}
+
+.container .information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .information h4 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 1.8px;
+    color: #599ac5;
+}
+
+.container .information h2 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.container .information p {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 00.9px;
+    font-weight: 500;
+    margin: 20px 0;
+    color: rgb(160, 154, 154);
+}
+
+/* CONTENT SONU */
+
+/* FOOTER BAŞLANGICI */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.footer-picture {
+    width: 100%;
+    height: 300px;
+    background-image: url(images/footer.jpg) !important;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+.footer-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 100%;
+    background-color: #599aac57;
+
+}
+
+.footer-info p {
+    background-color: transparent;
+    color: white;
+}
+
+.footer-info p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.footer-info h4 {
+    font-size: 24px;
+    margin: 10px 70px;
+    letter-spacing: 1.2px;
+    background-color: transparent;
+    color: #fafafa;
+}
+
+.footer-info a {
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+    margin-right: 70px;
+    margin-left: 70px;
+    text-align: center;
+    border-radius: 35px;
+    font-size: 12px;
+    background-color: #599ac5;
+}
+
+
+/* FOOTER SONU */
+
+/* RESPONSIVE BAŞLANGICI */
+
+@media screen and (max-width: 870px) {
+    .footer-info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        letter-spacing: .7px;
+    }
+
+    .about .about-info h1 {
+        font-size: 35px;
+    }
+
+    .about .about-info p {
+        font-size: 12px;
+    }
+
+    .about .about-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .about-picture-1 {
+        margin-left: 30px;
+    }
+
+    .about .about-picture-2 {
+        margin-top: 15px;
+    }
+
+    .about .about-info a {
+        margin: 5px 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .container .information h2 {
+        font-size: 26px;
+    }
+
+    .container p {
+        font-size: 12px;
+    }
+}
+
+
+/* RESPONSIVE SONU */
