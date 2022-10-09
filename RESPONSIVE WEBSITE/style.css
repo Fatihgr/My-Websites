@@ -49,6 +49,7 @@ header ul {
     line-height: 40px;
     text-align: center;
     justify-content: center;
+    font-weight: bold;
 }
 
 .logo {
