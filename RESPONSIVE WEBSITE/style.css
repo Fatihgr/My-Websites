@@ -8,16 +8,51 @@
     background-color: #fafafa;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* HEADER START */
 
 .header {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin: 50px 5px;
+    margin: 0;
+    height: 100px;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+}
+
+
+header ul {
+    display: inline-block;
+    margin: 0 15px;
+
+}
+
+.header .logo .logo-circle .giris {
+    display: flex;
+    top: 20%;
+    left: 90%;
+    width: 100px;
+    height: 40px;
+    box-shadow: 4px 4px 4px #999;
+    position: absolute;
+    background-color: #4f93a6;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    line-height: 40px;
+    text-align: center;
+    justify-content: center;
 }
 
 .logo {
+    top: 0;
     display: flex;
     align-items: center;
 
@@ -53,7 +88,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 60px 0;
+    margin: 150px 0;
     overflow: hidden;
 }
 
@@ -122,6 +157,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 
 .about .about-info a {
@@ -143,6 +179,7 @@
     background-color: #4f93a6;
     margin-right: 10px;
     margin-bottom: 5px;
+    box-shadow: 4px 4px 4px #999;
     font-size: 20px;
 }
 
@@ -155,6 +192,8 @@
 
 .about .about-info .btn-2 {
     background-color: #4f93a6;
+    box-shadow: 4px 4px 4px #999;
+
 }
 
 /* ABOUT SONU */
