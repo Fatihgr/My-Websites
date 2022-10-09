@@ -1,8 +1,8 @@
 <script>
-    import {auth,googleProvider} from "./firebase";
-    import {authState} from "rxfire/auth";
+    import { auth, googleProvider } from "./firebase";
+    import { authState } from "rxfire/auth";
     let user;
-    const unsubscribe = authState(auth).subscribe(usr =>user=usr);
+    const unsubscribe = authState(auth).subscribe((usr) => (user = usr));
     function login() {
         auth.signInWithPopup(googleProvider);
     }
@@ -17,7 +17,7 @@
     {:else}
         <div class="login-form">
             <button on:click={login}>
-                <i class="fa fa-google"></i>
+                <i class="fa fa-google" />
                 Google Hesabınızla Oturum Açın
             </button>
         </div>
@@ -25,7 +25,7 @@
 </main>
 
 <style>
-    main{
+    main {
         position: fixed;
         top: 50%;
         left: 50%;
@@ -38,13 +38,13 @@
         border: 1px solid #eee;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
     }
-    .login-form{
+    .login-form {
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .login-form button{
+    .login-form button {
         padding: 10px;
         background: #fff;
         color: #111;
@@ -53,9 +53,9 @@
         outline: none;
         border: 1px solid #bbb;
     }
-    .login-form button i.fa{
-        padding-right:10px;
+    .login-form button i.fa {
+        padding-right: 10px;
         border-right: 1px solid #ddd;
-        color:#555;
+        color: #555;
     }
 </style>
