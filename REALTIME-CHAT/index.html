@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="https://kit.fontawesome.com/42eae9eadc.js" crossorigin="anonymous"></script>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="./client.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="chatContainer" id="chatContainer">
+            <div class="chatHead">
+                <p>Hoşgeldiniz</p>
+                <div class="usersCount">
+                    <i class="fa-solid fa-user"></i>
+                    <span id="onUsers">0</span>
+                </div>
+            </div>
+            <div class="chattings" id="chatting">
+            </div>
+            <form action="#" id="messageForm">
+                <input type="text" id="messageInput" placeholder="Mesajınızı giriniz">
+                <button id="sendBtn">Gönder</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
