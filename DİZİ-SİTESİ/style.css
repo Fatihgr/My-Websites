@@ -53,6 +53,7 @@ main {
     position: relative;
     overflow: hidden;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .movie img {
